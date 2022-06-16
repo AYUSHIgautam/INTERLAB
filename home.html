@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="first home.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="items"><a href="home.html">HOME</a></li>
+            <li class="items"><a href="html1.html">PEOPLE</a></li>
+            <li class="items"><a href="infra.html">INFRASTRUCTURE</a></li>
+            <li class="items"><a href="software.html">SOFTWARE</a></li>
+            <li class="items"><a href="contact.html">CONTACT</a></li>
+            <li class="items"><a href="publication.html">PUBLICATIONS</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <H1><B>INTERLAB</B></H1>
+
+    </section>
+
+    <section id="secondpara">
+        <H1><B>Interlab: Laboratory on Intelligent Engineering for Communications and Networking</B></H1>
+
+    </section>
+
+    <section id="thirdpara">
+        <h1>HOME</h1>
+        <p> The laboratory aims at carrying out research on issues related to communication networks.
+
+            The contexts of users mobility, velocity and variety of data, and diversity of user applications, often pose
+            complex problems of general coordination, ressource management, low-latency and real-time service delivery,
+            and reliability. In order to address these problems, the activities of the laboratory exploit and integrate
+            various techniques and methodologies including mathematical modeling, machine learning techniques, signal
+            processing, systems simulation, prototyping and experimentation.
+
+            The activities of INTERLAB are particularly interested in the following areas:
+            Next generation networks (5G and beyond), Edge computing, Network Intelligence, and communication networks
+            for verticals such as Connected and Autonomous Cars, IoT, and Industrial IoT.
+
+            INTERLAB research program has been supported by the following organizations : </p>
+
+    </section>
+    <div id="comb">
+        <section id="forthpara">
+            <img src="Screenshot (73).png" alt="">
+        </section>
+
+        <section id="fifthpara">
+
+            <h1><b>NEWS</b></h1>
+            <h4><a href="damri.html">Dambri's Phd. defence</a></h4>
+            <p>Congratulations to Abderrahmane Ousssama Dambri for his succesful PhD. disertation defense!</p>
+            <P>.</P>
+            <P>.</P>
+
+            <h4><a href="somaya.html">Prof. cherkaoui nominated IEEE ComSoc distinguished lecturer</a></h4>
+            <p>Prof. Cherkaoui nominated IEEE ComSoc distinguished lecturer.</p>
+            <P>.</P>
+            <P>.</P>
+
+            <h4><a href="globecom.html">GLOBECOM 2019</a></h4>
+            <P>Congrats! Amine Abouaomar paper was accepted for publication in GLOBECOM 2019 with title "Resource
+                Representation for Resource Allocation in Edge Computing Networks".</P>
+            <P>.</P>
+            <P>.</P>
+
+            <H4><a href="PIMRC.html">PIMRC 2019</a></H4>
+            <P>Congrats! Hajar Moudoud paper was accepted for publication in PIMRC 2019 with title "Using Blockchain for
+                IoT: Review, Challenges, and Reconciling solution for Supply Chain".</P>
+            <P>.</P>
+            <P>.</P>
+
+            <H4><a href="IWCMC.html">IWCMC 2019</a></H4>
+            <P>Congrats! Oussama Abderrahmane Dambri paper was accepted for publication in IWCMC 2019 with title "Design
+                and Evaluation of Self-Assembled Actin-Based Nano-Communication".</P>
+            <P>.</P>
+            <P>.</P>
+
+            <h4><a href="ICC.html">ICC 2019</a></h4>
+            <P>Congrats! Abderrahime Filali paper was accepted for publication in ICC 2019 with title "Prediction-Based
+                Switch Migration Scheduling for SDN Load Balancing".</P>
+            <P>.</P>
+            <P>.</P>
+
+            <h4><a href="ICC 2019.html">ICC 2019</a></h4>
+            <P>Congrats! Amel Arfaoui paper was accepted for publication in ICC 2019 with title "Context-Aware Adaptive
+                Authentication and Authorization in Internet of Things".</P>
+            <h1>
+
+                <p id="fifthpara2">
+
+
+
+                </p>
+
+
+
+
+                <!-- Form to add item -->
+                <form action="#" style="text-align:center;">
+
+                    <!-- Type of Element -->
+                    <label for="type">
+                        <h6> add the element type</h6>
+                    </label>
+
+                    <input type="text" id="type" placeholder="Like:p, br, div, h1, href, li...." value="p" />
+
+
+                    <!-- Text/Value for the element --->
+                    <label for="value">
+                        <h6>what is element value</h6>
+                    </label>
+
+                    <input type="text" id="value" placeholder="Like: hello" value="hello">
+                    <br><br>
+
+                    <!-- Submit the Form -->
+                    <button type="button" onClick="addItem()">
+                        Add
+                    </button>
+                </form>
+
+
+
+                <script>
+
+                    // Define the addItem() function
+                    // to be called through onclick
+                    function addItem() {
+
+                        // Get type of element from form
+                        let type = document.
+                            getElementById("type").value;
+
+                        // Get the text/value for the tag
+                        // from the form
+                        let value = document.
+                            getElementById("value").value;
+
+                        // createElement() is used for
+                        // creating a new element
+                        type
+                            = document.createElement(type);
+
+                        // Use value as textnode in this example
+                        type.appendChild(
+                            document.createTextNode(value));
+
+                        // Append as child to the parent
+                        // tag i.e. ol
+                        document.getElementById("fifthpara2").appendChild(type);
+                    }
+                </script>
+
+        </section>
+    </div>
+
+    <footer id="last">
+        <img src="login.png" alt="">
+        <a href="#">login</a>
+        <p>......</p>
+        <img src="register.jpg" alt="">
+        <a href="#">register</a>
+        <br>
+        <p>Copyright Interlab. All Rights Reserved.</p>
+        <br>
+        <p>powered by CMSMadeSimple</p>
+    </footer>
+
+
+</body>
+
+</html>
